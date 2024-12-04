@@ -1,6 +1,9 @@
 # Mash Guard
 
 [![Python Version](https://img.shields.io/badge/Python-3.12-brightgreen.svg)](.)
+![Static Badge](https://img.shields.io/badge/Aiogram-3.12.0-%23159FFA?link=https%3A%2F%2Fpypi.org%2Fproject%2Faiogram%2F3.12.0%2F)
+![Static Badge](https://img.shields.io/badge/psycopg-3.2.1-%23B987C3?link=https%3A%2F%2Fpypi.org%2Fproject%2Fpsycopg%2F3.2.1%2F)
+
 
 Simple bot for controlling incoming followers
 
