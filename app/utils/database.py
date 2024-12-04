@@ -44,16 +44,6 @@ class Database:
                 rows: List[Optional[Tuple]] = await cursor.fetchall()
         return rows
     
-    async def fetchmany(self, query: str, params: Iterable[Params], **kwargs) -> Optional[List[Tuple]]:
-        async with self.pool.connection() as connection:
-            async with connection.cursor() as cursor:
-                await cursor.executemany(query, params, **kwargs)
-                try:
-                    rows: List[Tuple] = await cursor.fetchmany()
-                except ProgrammingError:
-                    return None
-        return rows
-    
     async def close(self):
         if isinstance(self.pool, AsyncConnectionPool):
             await self.pool.close()
