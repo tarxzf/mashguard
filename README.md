@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 ## Setting up the file configuration
 
-Open the .env file and enter data
+Rename .env.example file to .env and enter data there
 
 ## Launching
 
